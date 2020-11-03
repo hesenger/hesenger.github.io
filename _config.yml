@@ -27,7 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hesenger.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hesenger
 github_username: hesenger
-site.google_analytics: G-D555GG71GT
+google_analytics: G-D555GG71GT
 
 # Build settings
 # theme: hes
