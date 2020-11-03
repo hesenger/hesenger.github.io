@@ -19,7 +19,7 @@ Sybase and Firebird.
 
 Today I spend my time with most contemporary technologies for 
 Mobile and Web Development like C#, Java, Javascript, Sql Server, 
-SQLite and others.
+SQLite, Microsoft Azure PaaS and others.
 
 Angular, React and React Native, Cordova, ExtJS are some of my
 favorites tools.
