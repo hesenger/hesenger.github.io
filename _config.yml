@@ -30,6 +30,7 @@ github_username: hesenger
 
 # Build settings
 # theme: hes
+remote_theme: hesenger/hesenger-theme
 plugins:
   - jekyll-feed
 
