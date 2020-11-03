@@ -17,36 +17,61 @@
     <meta charset="utf-8">
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- feed_meta -%}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="/css/normalize.min.css">
     <link rel="stylesheet" href="/css/main.css">
-    <meta property="og:type" content= "website" />
-    <meta property="og:url" content="https://stackoverflow.com/questions/38437416/jekyll-doesnt-compile-scss-files-with-jekyll-serve"/>
-    <meta property="og:site_name" content="{{ title }}" />
-    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded" />
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:domain" content="stackoverflow.com"/>
-    <meta name="twitter:title" property="og:title" itemprop="name" content="Jekyll doesn&#x27;t compile scss files with `jekyll serve`" />
-    <meta name="twitter:description" property="og:description" itemprop="description" content="I&#x27;m trying to create a website using Jekyll, and everything worked fine. Until I wanted to custom the design.&#xA;&#xA;I&#x27;ve updated my css/main.scss in order to include my custom theme in _sass/theme.scss:..." />
-    {%- feed_meta -%}
 </head>
 
 <body>
-    <div id="root" class="center">
-        <div id="content">
-            <header>
-                <img src="assets/profile-circle.jpg" alt="profile" style="width: 200px" />
-                {{ title }}
-            </header>
+    <main>
+        <header>
+            <p>{{ site.title }}</p>
+            <span>{{ site.description }}</span>
+        </header>
+        <nav>
+            <a href="/">Home</a>
+            {%- for page in site.pages -%}
+            {% if page.title %}
+            <a href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+            {% endif %}
+            {%- endfor -%}
+        </nav>
 
+        <article>
+            {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+            {%- if page.title -%}
+            <span>{{ page.date | date: date_format }}</span>
+            <h1>{{ page.title }}</h1>
+            {%- endif -%}
             {{ content }}
+        </article>
 
-            <footer>
-                <p>Theme v0.2</p>
-            </footer>
-        </div>
-    </div>
+        <footer>
+            <article>
+                {{ site.title }}
+                {{ site.description }}
+                <ul>
+                    <li><a href="https://github.com/hesenger" target="_blank" rel="noopener noreferrer">GitHub
+                            Profile</a></li>
+                    <li><a href="https://twitter.com/hesenger" target="_blank" rel="noopener noreferrer">Twitter
+                            Profile</a></li>
+                </ul>
+            </article>
+            <article>
+                Developed and hosted using
+                <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>,
+                <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>
+                and <a href="https://github.com/hesenger/hesenger-theme" target="_blank" rel="noopener noreferrer">my
+                    custom theme</a>.
+            </article>
+        </footer>
+    </main>
 </body>
 
 </html>
