@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "React SimpleTable first release"
-date: 2020-11-03 12:58:42 -0300
+date: 2020-11-04 12:58:42 -0300
 categories: blog
 ---
 
