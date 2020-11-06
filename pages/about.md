@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: >-
-    I'm a professional fullstack developer since 2007 but 
+    I'm a full stack developer since 2006 but 
     started to code a bit before this
 permalink: /about/
 ---
@@ -10,11 +10,11 @@ permalink: /about/
 ![Wife, son, my dog and me](/assets/profile-circle.jpg)
 
 Although graduated as a laywer, I was have been worked as a professional 
-fullstack developer since 2006 and started to code a bit before this.
+full stack developer since 2006 and started to code a bit before this.
 
 At the beggining desktop softwares were still in a high demand 
 and I started writing in languages like Visual Basic 4/6 and 
-Delphi 5/7. At this point common databases for me were Access, 
+Delphi 5/7. At this time common databases for me were Access, 
 Sybase and Firebird.
 
 Today I spend my time with most contemporary technologies for 

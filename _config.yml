@@ -21,7 +21,7 @@
 title: Heber Senger
 email: sengerhe@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a fullstack developer and use this place to share my projects and experiences.
+  I'm a full stack developer and use this place to share my projects and experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hesenger.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hesenger
